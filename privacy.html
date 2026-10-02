@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zikrâne — Gizlilik Politikası</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #0f2a24;
+        --card: #16352d;
+        --fg: #eef7f2;
+        --muted: #a8c6ba;
+        --gold: #e8c547;
+        --line: #2b5147;
+      }
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #f6f8f6;
+          --card: #ffffff;
+          --fg: #17251f;
+          --muted: #4d6a5e;
+          --gold: #9a7b12;
+          --line: #dfe7e2;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 32px 16px 64px;
+        background: var(--bg);
+        color: var(--fg);
+        font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      }
+      main { max-width: 760px; margin: 0 auto; }
+      header { text-align: center; margin-bottom: 28px; }
+      h1 { font-size: 1.6rem; margin: 0 0 6px; }
+      .sub { color: var(--muted); font-size: 0.9rem; }
+      section {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 20px 22px;
+        margin-bottom: 14px;
+      }
+      h2 { font-size: 1.05rem; margin: 0 0 10px; color: var(--gold); }
+      ul { padding-left: 20px; margin: 8px 0; }
+      li { margin: 4px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+      th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); }
+      th { color: var(--muted); font-weight: 600; }
+      a { color: var(--gold); }
+      .en { opacity: 0.92; }
+      footer { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 26px; }
+      .scroll { overflow-x: auto; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Zikrâne — Gizlilik Politikası</h1>
+        <p class="sub">Son güncelleme: 3 Eylül 2026</p>
+      </header>
+
+      <section>
+        <p>
+          Zikrâne; kişisel verilerinizi toplamayan, hesap açmanızı istemeyen ve reklam
+          göstermeyen bir ibadet yardımcısıdır. Bu sayfa, uygulamanın hangi verilere eriştiğini
+          ve bunları ne için kullandığını açıklar.
+        </p>
+      </section>
+
+      <section>
+        <h2>1. Cihazınızda kalan veriler</h2>
+        <p>Şunlar yalnızca telefonunuzda tutulur, hiçbir sunucuya gönderilmez:</p>
+        <ul>
+          <li>Zikir sayaçlarınız, hedefleriniz, rutinleriniz ve geçmiş kayıtlarınız</li>
+          <li>Günlük hedef, gün serisi ve toplam sayınız</li>
+          <li>Okuma tercihleri (yazı boyutu, meal, sayfa/liste görünümü, okuma hızı, son sayfa)</li>
+          <li>Vakit, alarm, kandil ve Ramazan bildirim tercihleri</li>
+          <li>En son bilinen konumunuz (yalnızca vakitleri yeniden hesaplamak için)</li>
+          <li>İndirilen namaz vakti takvimi ve kelime zamanlamaları (çevrimdışı çalışmak için)</li>
+        </ul>
+        <p>Uygulamayı sildiğinizde bu verilerin tamamı telefondan silinir.</p>
+      </section>
+
+      <section>
+        <h2>2. Konum</h2>
+        <p>
+          Namaz vakitleri ve kıble yönü için konum istenir. Konum yalnızca uygulama açıkken ve
+          izin verdiğinizde alınır; arka planda konum takibi yapılmaz. Koordinatlarınız vakit
+          hesabı için <strong>Aladhan</strong> (api.aladhan.com), şehir adını gösterebilmek için
+          <strong>OpenStreetMap Nominatim</strong> (nominatim.openstreetmap.org) servislerine
+          gönderilir. Kimliğinizle ilişkilendirilmez, reklam ya da takip için kullanılmaz ve
+          tarafımızca saklanmaz. İzin vermezseniz uygulama çalışmaya devam eder.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. Bildirimler ve alarmlar</h2>
+        <p>
+          Vakit, kandil, bayram ve Ramazan hatırlatmaları telefonun kendi zamanlayıcısıyla cihaz
+          üzerinde kurulur. Uzaktan bildirim (push) altyapısı yoktur.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. İnternetten alınan içerikler</h2>
+        <div class="scroll">
+          <table>
+            <tr><th>Servis</th><th>İçerik</th></tr>
+            <tr><td>api.aladhan.com</td><td>Namaz vakitleri takvimi</td></tr>
+            <tr><td>api.alquran.cloud</td><td>Kuran metni ve mealler</td></tr>
+            <tr><td>api.quran.com</td><td>Tilavetin kelime zamanlamaları</td></tr>
+            <tr><td>cdn.islamic.network</td><td>Ayet ses kayıtları</td></tr>
+            <tr><td>cdn.jsdelivr.net</td><td>Hadis koleksiyonları</td></tr>
+            <tr><td>nominatim.openstreetmap.org</td><td>Konumdan şehir adı</td></tr>
+          </table>
+        </div>
+        <p>
+          Bu isteklerde kimlik bilgisi gönderilmez; ilgili servisler teknik olarak yalnızca IP
+          adresinizi ve istek zamanını görür. Kendi gizlilik politikaları geçerlidir.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Toplanmayan veriler</h2>
+        <p>
+          Adınız, e-postanız, telefon numaranız, rehberiniz, fotoğraflarınız, cihaz kimliğiniz ve
+          kullanım istatistikleriniz toplanmaz. Uygulamada analiz aracı, reklam ağı veya üçüncü
+          taraf takip bileşeni yoktur.
+        </p>
+      </section>
+
+      <section>
+        <h2>5.1 İsteğe bağlı destek (satın alma)</h2>
+        <p>
+          Uygulama ücretsizdir. İsteğe bağlı destek (tek seferlik ya da düzenli) yalnızca Google
+          Play veya App Store'un kendi satın alma sistemiyle yapılır. Ödeme bilgileriniz bize hiçbir
+          zaman ulaşmaz; satın alma kaydını mağaza tutar. Uygulama yalnızca cihazınızda "destekçi"
+          durumunu saklar (destek hatırlatmalarını susturmak için). Düzenli destek, mağaza
+          ayarlarından istediğiniz an iptal edilebilir. Destek hatırlatmaları Ayarlar'dan
+          kapatılabilir ve namaz vakti bildirimlerine hiç eklenmez.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Çocuklar</h2>
+        <p>Uygulama çocuklara yönelik değildir ve çocuklardan bilerek veri toplamaz.</p>
+      </section>
+
+      <section>
+        <h2>7. Haklarınız ve iletişim</h2>
+        <p>
+          Sizinle ilişkilendirilebilecek veri saklanmadığı için erişim veya silme talebine gerek
+          yoktur. Cihazdaki verileri uygulamayı kaldırarak ya da Ayarlar → Uygulamalar →
+          Zikrâne → Depolama → Verileri temizle ile silebilirsiniz. Sorularınız için:
+          <a href="mailto:onurguner.bjk@gmail.com">onurguner.bjk@gmail.com</a>
+        </p>
+      </section>
+
+      <section class="en">
+        <h2>Privacy Policy (English summary)</h2>
+        <p>
+          Zikrâne requires no account, shows no ads and collects no personal data. Counters,
+          routines, history, preferences, the last known location and downloaded calendars stay
+          on the device. Location is requested only in the foreground and only with permission;
+          coordinates are sent to Aladhan for prayer times and to OpenStreetMap Nominatim for the
+          city name, are not linked to your identity, are not used for advertising or tracking and
+          are not stored by us. Notifications and alarms are scheduled on the device; there is no
+          push infrastructure. Content is fetched from api.aladhan.com, api.alquran.cloud,
+          api.quran.com, cdn.islamic.network, cdn.jsdelivr.net and nominatim.openstreetmap.org,
+          which see only your IP address and request time. No name, e-mail, phone number,
+          contacts, photos, device identifiers or analytics are collected. The app is not directed
+          at children. Contact: onurguner.bjk@gmail.com
+        </p>
+      </section>
+
+      <footer>Zikrâne · com.zikirpocketbuddy.app</footer>
+    </main>
+  </body>
+</html>
