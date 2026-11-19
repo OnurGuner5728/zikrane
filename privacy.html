@@ -136,10 +136,12 @@
         <h2>4.1 Mikrofon (Kuran okuma testi)</h2>
         <p>
           Kuran Öğren bölümündeki okuma testinde, yalnızca siz mikrofon düğmesine bastığınızda ve
-          izin verdiyseniz mikrofon kullanılır. Sesiniz telefonun <b>cihaz içi</b> konuşma tanıma
-          motoruyla (Android 12 ve üstü) yalnızca telefonunuzda metne çevrilir ve okumanız puanlanır.
-          Ses kaydı saklanmaz, hiçbir sunucuya gönderilmez, bize ulaşmaz. Mikrofon iznini dilediğiniz
-          an telefon ayarlarından kaldırabilirsiniz; uygulamanın diğer bölümleri izin olmadan da çalışır.
+          izin verdiyseniz mikrofon kullanılır. Sesiniz, uygulamanın içinde çalışan Kur'an okuma
+          modeliyle (Tarteel'in açık kaynaklı Whisper modeli) <b>yalnızca telefonunuzda</b> yazıya
+          çevrilir ve okumanız puanlanır. Ses kaydı saklanmaz, hiçbir sunucuya gönderilmez, bize
+          ulaşmaz. Model dosyaları ilk kullanımda bir kez internetten (onurguner5728.github.io, gerekirse
+          huggingface.co) indirilir; bu indirmede sesiniz gönderilmez. Mikrofon iznini dilediğiniz an
+          telefon ayarlarından kaldırabilirsiniz; uygulamanın diğer bölümleri izin olmadan da çalışır.
         </p>
       </section>
 
@@ -180,8 +182,9 @@
           city name, are not linked to your identity, are not used for advertising or tracking and
           are not stored by us. Notifications and alarms are scheduled on the device; there is no
           push infrastructure. The microphone is used only in the Quran reading test, only when you tap the
-          microphone button and grant permission; your voice is transcribed by the phone&#39;s on-device
-          speech recognizer and is never recorded, stored or sent anywhere. Content is fetched from api.aladhan.com, api.alquran.cloud,
+          microphone button and grant permission; your voice is transcribed on the phone by a Quran
+          recitation model built into the app and is never recorded, stored or sent anywhere. The model
+          files are downloaded once on first use; your voice is not sent with that download. Content is fetched from api.aladhan.com, api.alquran.cloud,
           api.quran.com, cdn.islamic.network, cdn.jsdelivr.net and nominatim.openstreetmap.org,
           which see only your IP address and request time. No name, e-mail, phone number,
           contacts, photos, device identifiers or analytics are collected. The app is not directed
